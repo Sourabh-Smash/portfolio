@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .introduction {
+        margin: 10px;
+      }
+      .aboutMe,
+      .skills,
+      .web-projects {
+        background-color: bisque;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 7px;
+      }
+      .aboutMe h2,
+      .skills h2,
+      .web-projects h4 {
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .web-projects h4 {
+        font-weight: 800;
+      }
+      .aboutMe p,
+      .web-projects p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: 200;
+      }
+      .skill-name {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        margin: 5px 0px;
+      }
+      .my-skill {
+        margin-left: 5px;
+        height: 5px;
+        width: 200px;
+        background-color: aquamarine;
+      }
+      .project-cont {
+        display: flex;
+      }
+      .projects h2 {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+          text-transform: uppercase;
+          margin-bottom: 7px;
+
+
+      }
+      .web-projects {
+        margin: 0px 10px 0px 0px;
+      }
+      button {
+        margin-top: 7px;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(3, 3, 3);
+        color: azure;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+      button:hover {
+        content: '';
+        transition: all ease-in-out 0.3s;
+        background-color: rgb(23, 198, 198);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="sidebar">
+          <!-- Sourabh -->
+          <nav>
+            <ul>
+              <li><a href="#"> HOME</a></li>
+              <li><a href="sections/intro.html"> Intro </a></li>
+              <li><a href="sections/services.html"> Services</a></li>
+              <li><a href="sections/blogs.html"> Blogs</a></li>
+              <li><a href="sections/contactme.html"> Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main">
+        <div class="introduction">
+          <div class="aboutMe">
+            <h2>My Name is Sourabh Manawat</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis qui
+              reiciendis at delectus dicta quod odio obcaecati voluptates
+              expedita, commodi libero dolore voluptatibus sequi necessitatibus
+              repellendus beatae quidem debitis nisi?
+            </p>
+          </div>
+          <div class="skills">
+            <h2>My Skills</h2>
+            <div class="skill-name">
+              HTML:
+              <div class="my-skill"></div>
+            </div>
+            <div class="skill-name">
+              CSS :
+              <div class="my-skill"></div>
+            </div>
+            <div class="skill-name">
+              JS :
+              <div class="my-skill"></div>
+            </div>
+            <div class="skill-name">
+              C :
+              <div class="my-skill"></div>
+            </div>
+            <div class="skill-name">
+              C++ :
+              <div class="my-skill"></div>
+            </div>
+          </div>
+          <div class="projects">
+            <h2>My Projects</h2>
+            <div class="project-cont">
+              <div class="web-projects">
+                <h4>FlipCart Clone</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                  corporis blanditiis quibusdam est. Aut accusamus eligendi ipsa
+                  qui commodi neque.
+                </p>
+                <button href="#">READ MORE</button>
+              </div>
+              <div class="web-projects">
+                <h4>Navigation Bar</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                  corporis blanditiis quibusdam est. Aut accusamus eligendi ipsa
+                  qui commodi neque.
+                </p>
+                <button href="#">READ MORE</button>
+              </div>
+              <div class="web-projects">
+                <h4>Bootstrap Clone</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
+                  corporis blanditiis quibusdam est. Aut accusamus eligendi ipsa
+                  qui commodi neque.
+                </p>
+                <button href="#">READ MORE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

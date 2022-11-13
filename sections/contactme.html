@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      .main-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .contactInfo {
+        /* background-color: aquamarine; */
+        height: 85vh;
+        width: 67vw;
+        margin-top: 10px;
+      }
+      .main-2 h2 {
+        margin-right: 42vw !important;
+        padding: 0;
+      }
+      .form-info {
+        margin: 10px 0px 10px 0px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 600;
+      }
+      .user-detail {
+        display: block;
+        margin: 0px 0px 4px 5px;
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 500;
+      }
+      .input-decor {
+        border: none;
+        border-radius: 5px;
+        padding: 4px 4px 4px 10px;
+        margin: 2px 0px 2px 4px;
+        height: 20px;
+        width: 500px;
+        background-color: aliceblue;
+        font-size: 14px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      #select-gender {
+        padding: 4px 4px 4px 5px;
+        margin: 2px 0px 2px 0px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
+      }
+      #user-option {
+        height: 27px;
+        width: 515px;
+        padding-left: 180px;
+      }
+      #user-problem {
+        height: 35px;
+      }
+      button {
+        margin-left: 20px;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: rgb(3, 3, 3);
+        color: azure;
+        font-family: sans-serif;
+        text-transform: uppercase;
+      }
+      button:hover {
+        content: '';
+        transition: all ease-in-out 0.3s;
+        background-color: rgb(23, 198, 198);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="sidebar">
+          <!-- Sourabh -->
+          <nav>
+            <ul>
+              <li><a href="#"> HOME</a></li>
+              <li><a href="sections/intro.html"> Intro </a></li>
+              <li><a href="sections/services.html"> Services</a></li>
+              <li><a href="sections/blogs.html"> Blogs</a></li>
+              <li><a href="sections/contactme.html"> Contact Me</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="main main-2">
+        <h2>* are required information</h2>
+        <div class="contactInfo">
+          <form action="" method="get">
+            <div class="form-info">
+              <label for="form-detail" class="user-detail"> Name:*</label>
+              <input
+                type="text"
+                name="name"
+                id=""
+                placeholder="sourabh manawat"
+                required
+                class="input-decor"
+              />
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail">
+                Email Address:*</label
+              >
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="abc@gmail.com"
+                required
+                class="input-decor"
+              />
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail">Phone No:*</label>
+              <input
+                type="number"
+                name="phone-No"
+                id=""
+                placeholder="123456789"
+                required
+                class="input-decor"
+              />
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail"> Gender:</label>
+              <div id="select-gender">
+                Male <input type="radio" name="Gender" /> Female
+                <input type="radio" name="Gender" />
+              </div>
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail"> Address:</label>
+              <textarea
+                name="address"
+                class="input-decor"
+               placeholder="City | District | Street"
+                cols="30"
+                rows="3"
+
+              ></textarea>
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail"> Profession:*</label>
+              <select
+                name="profession"
+                id="user-option"
+                class="input-decor"
+                required
+              >
+                <option value=">----Select Profession----<">
+                  Select Profession
+                </option>
+                <option value="student">Student</option>
+                <option value="Lawyer">Lawyer</option>
+                <option value="engineer">Engineer</option>
+              </select>
+            </div>
+            <div class="form-info">
+              <label for="form-detail" class="user-detail"> Problem:*</label>
+              <textarea
+                name="address"
+                id="user-problem"
+                cols="30"
+                rows="3"
+                class="input-decor"
+                placeholder="How can i help you?"
+              ></textarea>
+            </div>
+            <div class="form-info">
+              <button>Submit</button> <button href="../index.html">home</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
